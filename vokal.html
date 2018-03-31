@@ -1,0 +1,197 @@
+<!-- play with navbar, fix navlink spacing on mobile, fix header -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+		<title>Vokal</title>
+		<link rel="shortcut icon" type="image/jpg" href="assets/images/misc/favicon.jpg"/>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/ekko-lightbox.css"> <!-- Ekko Lightbox -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!-- Bootstrap v4.0 -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+
+	<body>
+		<div class="container-fluid"> <!-- all content -->
+			<div class="row"> <!-- all content -->
+				<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 sidebar"> <!-- sidebar column -->
+					<div class="row"> <!-- about -->
+						<a class="home" href="index.html">Kara Mui</a>
+						<p>My name is Kara Mui and I am a full-stack web developer with several years of design experience. I am proficient in a variety of programming languages, which I use to create elegant, intuitive websites and applications. I excel at analysis, communication, and organization, and am always eager to learn new skills.</p>
+						<a href="mailto:kara.mui@dartmouth.edu" target="_blank"><img class="social" src="assets/images/social/email.png" alt="Email" title="Email"></a> <!-- icon by Sebastien Gabriel --> <a href="https://github.com/karamui/" target="_blank"><img class="social" src="assets/images/social/github.png" alt="GitHub" title="GitHub"></a> <!-- icon by Daniel Bruce --> <a href="https://www.linkedin.com/in/karamui/" target="_blank"><img class="social" src="assets/images/social/linkedin.png" alt="LinkedIn" title="LinkedIn"></a> <!-- icon by Freepik -->
+
+						<h3 class="resume" data-toggle="modal" data-target="#resume">Resume</h3>
+						<button id="returntotop" title="Return to top."><img class="nav" src="assets/images/misc/up-arrow.png" alt="return"></button> <!-- icon by Hanan -->
+					</div> <!-- about row -->
+				</div> <!-- sidebar column -->
+
+				<!-- REFERENCE: https://getbootstrap.com/docs/4.0/components/modal/ -->
+				<div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="Resume" aria-hidden="true"> <!-- resume modal -->
+				  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				    	<div class="modal-content">
+				      		<div class="modal-header">
+				        		<h3 class="modal-title">Resume</h3>
+				        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          			<span aria-hidden="true">&times;</span>
+				       		 	</button>
+				      		</div>
+
+					      	<div class="modal-body">
+					        	<p>What a resume!</p>
+					      	</div>
+				    	</div> <!-- modal content -->
+				  	</div> <!-- modal-dialog -->
+				</div> <!-- resume modal -->
+
+				<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 main"> <!-- app -->
+					<div class="row"> <!-- content -->
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"> <!-- images -->
+							<img class="img-fluid" src="assets/images/vokal/presentation.jpg" alt="presentation">
+							<div class="spacer"></div>
+							<a class="expand" href="assets/images/vokal/mockup1.jpg" data-toggle="lightbox" data-gallery="vokal" data-title="Conversations, individual messaging, and keyboard."><img class="img-fluid" src="assets/images/vokal/mockup1.jpg" alt="mockup1"></a>
+							<div class="spacer"></div>
+							<a class="expand" href="assets/images/vokal/mockup2.jpg" data-toggle="lightbox" data-gallery="vokal" data-title="Example functionality of conversations, contacts, and groups."><img class="img-fluid" src="assets/images/vokal/mockup2.jpg" alt="mockup2"></a>
+							<div class="spacer"></div>
+							<a class="expand" href="assets/images/vokal/mockup3.jpg" data-toggle="lightbox" data-gallery="vokal" data-title="Example of application in action."><img class="img-fluid" src="assets/images/vokal/mockup3.jpg" alt="mockup3"></a>
+							<div class="spacer"></div>
+						</div> <!-- images column -->
+						
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 textblock"> <!-- text -->
+							<div class="row"> <!-- title -->
+								<h1>Vokal</h1>
+							</div> <!-- title row -->
+
+							<div class="row"> <!-- tags -->
+								<label class="filter" id="application">Application</label>	
+								<label class="filter" id="mobile">Mobile</label>
+								<label class="filter" id="mockup">Mockup</label>				
+							</div> <!-- tags row -->
+
+							<div class="row"> <!-- description -->
+								<div class="spacer"></div>
+								<p><b>After graduating from college, I decided to spend the summer traveling around Europe for a month on my own.</b> I had never done anything like this before. This would be my first time travelling solo for an extended period of time, and I had decided to take the plunge and do it internationally. I had planned for every eventuality—choosing hostels, arranging transportation, bookmarking attractions, and making far, far too many lists in general—or so I thought.</p>
+								<p><b>I stepped off the plane in Madrid and my phone didn’t work.</b> This wouldn’t have been a big deal if not for the fact that a) the only thing I can do in Spanish is count to ten, b) all of my directions and carefully-laid plans were on that phone, and c) I had no way of communicating with anyone. Of all of these issues, it was the lack of communication which induced the most panic. I had known that I would be traveling alone, but now I was <i>reeeeeeally</i> on my own with no way to make a local phone call, let alone get in touch with anyone back home.</p>
+								<p>Eventually, the matter was solved (thank goodness), but <b>I still remember that overwhelming feeling of dread</b>. When I had settled back in on my side of the ocean and started getting involved in UX, this was one of the first problems I sought to address. <b><i>How can I make sure this never happens to anyone else?</i></b> I wondered.</p>
+								<p><b>Vokal is my solution.</b></p>
+							</div> <!-- description row -->
+
+							<div class="row"> <!-- solution -->
+								<div class="spacer"></div>
+								<h2>Proposed Solution</h2>
+								<p><b>Vokal is a bright and engaging mobile messenger application.</b> It’s my answer to common instant messaging usability problems, including texting and data limitations, international communication fees, lack of interface customization, and unreliable phone service.</p>
+								<p><b>Scroll on to learn more about how I arrived at this solution.</b></p>
+							</div> <!-- solution row -->
+
+							<div class="row"> <!-- process title -->
+								<div class="spacer"></div>
+								<h2>Process &amp; Challenges</h2>
+							</div> <!-- process title row -->
+
+							<div class="row"> <!-- user research -->
+								<h3>User Research</h3>
+							</div> <!-- user research row -->
+
+							<div class="row"> <!-- users -->
+								<h4>Users</h4>
+								<p>Since my international service issue was incredibly specific and not widely applicable to other users, I first <b>sought to expand the user base</b>. As a college student, I had been constantly surrounded by peers trying out—and complaining about—the latest messenger apps, so I had plenty of feedback to build my solution upon. I decided that Vokal would best appeal to users between the ages of 12 and 30—a <b>user base of students and young professionals</b> looking to communicate with friends and organize group activities.</p>
+							</div> <!-- users row -->
+
+							<div class="row"> <!-- problems -->
+								<h4>Problems &amp; Fears</h4>
+								<p>As a recent convert to the modern phone (goodbye, my old brick phone), I was well aware of many <b>functional limitations of older phone models</b>. I wanted to take these limitations into consideration and offer a solution which surmounted them. I also wanted to tackle a lot of <b>common complaints</b> I had heard from my peers about their messenger apps, and provide a fix for my international issue.</p>
+								<p>Thus, my final list of user-defined problems and fears (and potential solutions to them) looked something like this:</p>
+								<ul>
+									<li><b>user has limited texting / phone capability</b> → app uses wifi / data and can function without phone service</li>
+									<li><b>user dislikes traditional user interface and features</b> of default messenger → app provides ample opportunity for customization of interface</li>
+									<li><b>user has an outdated phone</b> which does not support group text or "fun/cool" apps, so the <b>user is sometimes left out of the loop</b> → app is supported on outdated phone models and offers group chat functionality</li>
+									<li><b>user finds international communication expensive and unreliable</b> → app is not dependent on service provider, and is capable of functioning internationally</li>
+									<li><b>user lost phone and all contacts</b> → app saves contacts to your account – contacts can be retrieved and restored on any device</li>
+									<li><b>user is in a hurry or lazy and worries that app will be difficult to use</b> → app has a simple, intuitive functionality that won’t waste time</li>
+									<li><b>user is afraid the app won’t work</b> or will be slow and buggy → app will undergo vigorous user testing and will receive regular support updates and maintenance based on user feedback</li>
+									<li><b>user is concerned about the privacy of their information and conversations</b> → all information on the app is confidential, and screen notifications can be customized or disabled</li>
+									<li><b>user is afraid the app will use too much data</b> → app uses the minimum amount of data necessary to function</li>
+								</ul>
+							</div> <!-- problems row -->
+
+							<div class="row"> <!-- motives -->
+								<h4>Motives</h4>
+								<p><b>What drives a user to actually <i>use</i> something?</b> Here are my thoughts on why a user would want to use Vokal.</p>
+								<ul>
+									<li class="tight">user wants to stay in touch with friends</li>
+									<li class="tight">user wants to be included in group activities</li>
+									<li class="tight">user wants to customize look of messenger</li>
+									<li class="tight">user wants to follow current trends and use "fun/cool" new ap</li>
+								</ul>
+							</div> <!-- motives row -->
+
+							<div class="row"> <!-- alternatives -->
+								<h4>Alternatives</h4>
+								<p>There are plenty of alternative messenger apps already, so why reinvent the wheel? Well, maybe the wheel is deflated or actually triangular and not much of a wheel at all. Lots of the messenger apps my peers were using made big promises but didn’t actually deliver on them. <b>I examined some of the popular alternative options</b> already in existence to determine their shortcomings.</p>
+								<ul>
+									<li><b>default messenger</b> → almost never has customization options, can be clunky and unreliable, might not support group or picture messages, might not function internationally</li>
+									<li><b>alternate app: Skype</b> → lacks customization options, heavy on data usage, simple processes (such as adding contacts or sending media messages) can be unnecessarily complex or unreliable, not well supported on outdated phones, has lots of bugs and limited mobile functionality</li>
+									<li><b>alternate app: WhatsApp</b> → very minimal customization options, not well supported or available on outdated phones, notifications not always reliable</li>
+									<li><b>simply make a phone call</b> → most users find this a time-consuming and inefficient method of communication, especially for organizing group activities; international phone calls are very expensive</li>
+								</ul>
+								<p>In response to these shortcomings, it was obvious that Vokal would need to be supported and available on older phones, use little data, offer calling and group messaging features, have international functionality, and offer a simple, intuitive, and customizable user interface.</p>
+							</div> <!-- alternatives row -->
+
+							<div class="row"> <!-- persona -->
+								<h4>Persona</h4>
+								<p>To help keep my mind on the user, I wanted to create a simple user persona to represent the type of person who would use Vokal. Meet Elena.</p>
+							
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 extended"> <!-- profile -->
+									<a class="expand" href="assets/images/vokal/profile.jpg" data-toggle="lightbox" data-gallery="vokal" data-title="User persona."><img class="img-fluid" src="assets/images/vokal/profile.jpg" alt="elena"></a>
+								</div> <!-- profile column -->
+							</div> <!-- persona row -->
+
+							<div class="row"> <!-- information architecture -->
+								<h3>Information Architecture</h3>
+								<p><b>Most of my ideas are born as messy pencil scribbles on a post-it note.</b> I roughly sketch the general layout of the design and make notes on different features or functions I’d like to include. Once I’ve got a clearer idea of what needs to happen, <b>I go back and create a wireframe</b>, placing things more definitively. I tend to prefer doing this with pen and paper too—it just feels more intuitive, and you can’t beat having an eraser.</p>
+								<p>These sketches and wireframes inevitably get tweaked as I transition to creating a <b>high-fidelity prototype in Photoshop</b>. I find it a lot easier (and more fun!) to envision a final product once there’s a bit of color on the drawing board.</p>
+								<p><b>Why "Vokal"?</b> Well, I’m an English major, and one of the unspoken rules about having a degree in English is that you need to have an appreciation for puns. It’s that simple. "Get Vokal" was simply too good to pass up as a tagline.</p>
+							
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 expanded"> <!-- sketch -->
+									<a class="expand" href="assets/images/vokal/sketch.jpg" data-toggle="lightbox" data-gallery="vokal" data-title="Initial sketch."><img class="img-fluid" src="assets/images/vokal/sketch.jpg" alt="sketch"></a>
+								</div> <!-- sketch column -->
+							</div> <!-- information architecture row -->
+
+							<div class="row"> <!-- result -->
+								<div class="spacer"></div>
+								<h2>Result</h2>
+								<p><b>Here is Vokal.</b> It’s important to note that since this is a personal project created for my own practice and edification, this app does not actually exist, nor have I created a functional prototype. This project was my first step on a journey into the world of digital user experience—prior to this, I had only really applied user experience to actual, physical products that I created in my engineering courses.</p>
+								<p>If I lived in a fantasy world where I had unlimited time and money, I’d love to go back and create a functional prototype of this app, conduct user testing, and implement further iterations.</p>
+							</div> <!-- result row -->
+
+							<div class="row"> <!-- more images -->
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 extended"> <!-- images -->
+									<a class="expand" href="assets/images/vokal/mockup4.jpg" data-toggle="lightbox" data-gallery="vokal" data-title="Group messaging."><img class="img-fluid" src="assets/images/vokal/mockup4.jpg" alt="mockup4"></a>
+									<div class="spacer"></div>
+									<a class="expand" href="assets/images/vokal/logo.jpg" data-toggle="lightbox" data-gallery="vokal" data-title="Logo."><img class="img-fluid app-image" src="assets/images/vokal/logo.jpg" alt="logo"></a>
+								</div> <!-- images column -->
+							</div> <!-- more images row -->
+
+						</div> <!-- text column -->
+					</div> <!-- content row -->
+				</div> <!-- app column -->
+
+			</div> <!-- main content row -->
+		</div> <!-- container-fluid for all content -->
+
+		<!-- JAVASCRIPT AND JQUERY -->
+		<script src="https://code.jquery.com/jquery.js"></script> <!-- jQuery -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script> <!-- Ekko Lightbox JavaScript -->
+		<script src="assets/javascript/app.js"></script>
+	</body>
+</html>

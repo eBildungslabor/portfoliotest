@@ -1,0 +1,209 @@
+<!-- play with navbar, fix navlink spacing on mobile, fix header -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+		<title>Crave</title>
+		<link rel="shortcut icon" type="image/jpg" href="assets/images/misc/favicon.jpg"/>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/ekko-lightbox.css"> <!-- Ekko Lightbox -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!-- Bootstrap v4.0 -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+
+	<body>
+		<div class="container-fluid"> <!-- all content -->
+			<div class="row"> <!-- all content -->
+				<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 sidebar"> <!-- sidebar column -->
+					<div class="row"> <!-- about -->
+						<a class="home" href="index.html">Kara Mui</a>
+						<p>My name is Kara Mui and I am a full-stack web developer with several years of design experience. I am proficient in a variety of programming languages, which I use to create elegant, intuitive websites and applications. I excel at analysis, communication, and organization, and am always eager to learn new skills.</p>
+						<a href="mailto:kara.mui@dartmouth.edu" target="_blank"><img class="social" src="assets/images/social/email.png" alt="Email" title="Email"></a> <!-- icon by Sebastien Gabriel --> <a href="https://github.com/karamui/" target="_blank"><img class="social" src="assets/images/social/github.png" alt="GitHub" title="GitHub"></a> <!-- icon by Daniel Bruce --> <a href="https://www.linkedin.com/in/karamui/" target="_blank"><img class="social" src="assets/images/social/linkedin.png" alt="LinkedIn" title="LinkedIn"></a> <!-- icon by Freepik -->
+
+						<h3 class="resume" data-toggle="modal" data-target="#resume">Resume</h3>
+						<button id="returntotop" title="Return to top."><img class="nav" src="assets/images/misc/up-arrow.png" alt="return"></button> <!-- icon by Hanan -->
+					</div> <!-- about row -->
+				</div> <!-- sidebar column -->
+
+				<!-- REFERENCE: https://getbootstrap.com/docs/4.0/components/modal/ -->
+				<div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="Resume" aria-hidden="true"> <!-- resume modal -->
+				  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				    	<div class="modal-content">
+				      		<div class="modal-header">
+				        		<h3 class="modal-title">Resume</h3>
+				        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          			<span aria-hidden="true">&times;</span>
+				       		 	</button>
+				      		</div>
+
+					      	<div class="modal-body">
+					        	<p>What a resume!</p>
+					      	</div>
+				    	</div> <!-- modal content -->
+				  	</div> <!-- modal-dialog -->
+				</div> <!-- resume modal -->
+
+				<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 main"> <!-- app -->
+					<div class="row"> <!-- content -->
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"> <!-- images -->
+							<img class="img-fluid" src="assets/images/crave/presentation.jpg" alt="presentation">
+							<div class="spacer"></div>
+							<a class="expand" href="assets/images/crave/mockup1.jpg" data-toggle="lightbox" data-gallery="crave" data-title="Filters, search results, reviews, directions, and restaurant information."><img class="img-fluid" src="assets/images/crave/mockup1.jpg" alt="mockup1"></a>
+							<div class="spacer"></div>
+							<a class="expand" href="assets/images/crave/mockup2.jpg" data-toggle="lightbox" data-gallery="crave" data-title="Example functionality of login screen when incorrect information is entered."><img class="img-fluid" src="assets/images/crave/mockup2.jpg" alt="mockup2"></a>
+							<div class="spacer"></div>
+							<a class="expand" href="assets/images/crave/mockup3.jpg" data-toggle="lightbox" data-gallery="crave" data-title="Home screen / directory."><img class="img-fluid" src="assets/images/crave/mockup3.jpg" alt="mockup3"></a>
+							<div class="spacer"></div>
+						</div> <!-- images column -->
+						
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 textblock"> <!-- text -->
+							<div class="row"> <!-- title -->
+								<h1>Crave</h1>
+							</div> <!-- title row -->
+
+							<div class="row"> <!-- tags -->
+								<label class="filter" id="application">Application</label>	
+								<label class="filter" id="mobile">Mobile</label>
+								<label class="filter" id="mockup">Mockup</label>				
+							</div> <!-- tags row -->
+
+							<div class="row"> <!-- description -->
+								<div class="spacer"></div>
+								<p><b>It’s six o’clock and you’re meeting up with a couple of friends in twenty minutes.</b> Everyone’s had a long day at work, and the group chat has turned into an endless wall of texts saying, <b>"I’m starving, let’s grab dinner. Where do you want to eat?"</b> Nobody seems to have an answer.</p>
+								<p>Minutes tick by as people waver between "Let's try something new." and "Let's go back to that cheap place with the tasty appetizers!" You finally get together and spend the next fifteen minutes torn between aimlessly wandering the streets and standing around fiddling with your phones, all in hopes of finding <b>That Magical Restaurant Everyone Will Love.</b></p>
+								<p><b>We’ve all been there.</b> It’s not a fun place to be. I’m hungry, you’re hungry, we’re all hungry. We’re getting cranky. We just want to eat and enjoy each other’s company, not waste time bickering over where to go.</p>
+								<p><b>That’s where Crave comes in.</b></p>
+							</div> <!-- description row -->
+
+							<div class="row"> <!-- solution -->
+								<div class="spacer"></div>
+								<h2>Proposed Solution</h2>
+								<p><b>Crave is a straightforward mobile app designed by and for hungry people.</b> It’s my answer to the never-ending dilemma of “What should I eat today?” Let Crave choose for you, or take control and use Crave to browse and filter restaurants, make reservations, order takeout or delivery, or get recommendations based on your favorite restaurants. Read or write reviews and post photos within in the app, or share your experience on social media. Get rewarded for dining at your favorite restaurants, or check out the hottest local deals elsewhere.</p>
+								<p><b>Scroll on to learn more about how I arrived at this solution.</b></p>
+							</div> <!-- solution row -->
+
+							<div class="row"> <!-- process title -->
+								<div class="spacer"></div>
+								<h2>Process &amp; Challenges</h2>
+							</div> <!-- process title row -->
+
+							<div class="row"> <!-- user research -->
+								<h3>User Research</h3>
+							</div> <!-- user research row -->
+
+							<div class="row"> <!-- users -->
+								<h4>Users</h4>
+								<p><b>Everyone gets hungry</b>, but certain demographics are more likely to turn to an app for help. I decided that Crave would best appeal to users between the ages of 15 and 45—a user base of <b>students and young to middle-aged professionals who regularly use technology</b> to simplify their daily lives.</p>
+							</div> <!-- users row -->
+
+							<div class="row"> <!-- problems -->
+								<h4>Problems &amp; Fears</h4>
+								<p>As a hungry college student with lots of hungry friends, I was forever on the lookout for an easier way to find and coordinate our next dinner. This involved a lot of <b>trial and error and testing out new apps</b> (or combinations thereof), which helped establish a clearer picture in my mind of what features Crave needed to include.</p>
+								<p>Thus, my final list of user-defined problems and fears (and potential solutions to them) looked something like this:</p>
+								<ul>
+									<li><b>user is hungry now</b> → app allows user to browse all nearby restaurants</li>
+									<li><b>user is hungry but has something specific in mind</b> → app allows user to apply filters (including price, rating, and distance) in order of importance to search results in order to select the ideal restaurant; user can read reviews by other users and browse photos and menus, or search for restaurants that offer takeout, delivery, reservations, or deals </li>
+									<li><b>user hates deciding where to eat</b> → app offers “surprise me!” feature which randomly chooses a restaurant; user has the option to choose randomly from restaurants within their selected filters</li>
+									<li><b>user wants to eat out with friends</b> → app allows user to create an event and invite their friends – user can choose where to eat, the app can choose, or the group can vote; app offers option to automatically create a reservation at chosen restaurant</li>
+									<li><b>user wants to order takeout or delivery</b> → app offers takeout and delivery feature, which allows user to place order entirely within the app; user receives a confirmation message once order has been processed</li>
+									<li><b>user wants to make a reservation</b>→ app offers reservation feature, which allows user to book tables and keep track of all outstanding reservations on one page; reservations can be imported directly into calendar, and reminders can be set</li>
+									<li><b>user wants cheap food / discounts</b> → app rewards users for frequenting their favorite restaurants, and also indicates which restaurants are offering coupons or deals; user earns points for leaving reviews, posting photos, or sharing their experience on social media – points can be redeemed for discounts and coupons</li>
+									<li><b>user needs directions to restaurant</b> → app contains all necessary restaurant information, including location – redirects user to default map service for step by step directions</li>
+									<li><b>user wants restaurant recommendations</b> → app offers recommendations based on user’s favorite restaurants; user profiles are unlimited, so a user could create as many profiles as necessary (ex: “Tom,” “Drunk Tom,” and “Tom ♥ Yasmin”)</li>
+									<li><b>user is afraid of being overwhelmed with options</b> → app offers randomizer feature and filters to choose for the user or significantly narrow down options </li>
+									<li><b>user is afraid there will be “nothing good” to eat</b> → app contains huge, diverse collection of local restaurants and bars, and offers tons of filters and options to help the user narrow down their choices</li>
+									<li><b>user is afraid the food will taste bad</b> → user can read reviews by other users and browse photos of the food to help decide; user can filter restaurants by rating</li>
+									<li><b>user is afraid recommendations will be lousy</b> → recommendations are driven by the user’s favorite restaurants and preferences, not by paid ads or search history</li>
+									<li><b>user is afraid restaurants will be too far away</b> → user can filter restaurants by distance to see all results within a certain distance of their current location</li>
+									<li><b>user is afraid restaurants will be too expensive</b> → user can filter restaurants by price to see results in their price range</li>
+									<li><b>user is afraid their reservation or order for takeout / delivery did not go through</b> → app sends confirmation message that the user’s reservation or order has been processed</li>
+									<li><b>user is afraid the app will use too much data</b> → app uses the minimum amount of data necessary to function</li>
+								</ul>
+							</div> <!-- problems row -->
+
+							<div class="row"> <!-- motives -->
+								<h4>Motives</h4>
+								<p><b>What drives a user to actually <i>use</i> something?</b> Here are my thoughts on why a user would want to use Crave.</p>
+								<ul>
+									<li class="tight">user wants to discover new local restaurants</li>
+									<li class="tight">user wants to eat at a restaurant that fits a specific set of criteria</li>
+									<li class="tight">user wants to eat out with friends</li>
+									<li class="tight">user wants to order takeout or make a reservation</li> 
+									<li class="tight">user wants to have the choice of “what should I eat?” answered for them</li>
+									<li class="tight">user wants to receive recommendations based on their favorite restaurants</li>
+									<li class="tight">user wants to examine menu and price options</li>
+									<li class="tight">user wants to be rewarded for frequenting a restaurant</li>
+									<li class="tight">user wants to check for coupons and deals offered by local restaurants</li>
+									<li class="tight">user wants to read reviews about a restaurant they are considering</li>
+									<li class="tight">user wants to browse photos from a restaurant they are considering</li>
+									<li class="tight">user wants to write reviews or post photos for a restaurant they have eaten at</li>
+									<li class="tight">user wants to share their dining experience on social media</li>
+									<li class="tight">user needs directions to a restaurant</li>
+									<li class="tight">user wants to use a visually appealing app which highlights the food</li>
+								</ul>
+							</div> <!-- motives row -->
+
+							<div class="row"> <!-- alternatives -->
+								<h4>Alternatives</h4>
+								<p>In my quest for the perfect dinner-finder, I’ve torn through a lot of different food and restaurant apps and have done my fair share of googling. There are plenty of alternatives out there already, so why bother creating another? Lots of the apps my peers and I were using were inefficient or overwhelming to the point of being totally ineffective.</p>
+								<p>Think about it – how many times have you opened a food app or spent time googling the “perfect place,” only to find yourself slowly walking up and down the street anyway? <b>I examined some of the popular alternative options</b> already in existence to determine their shortcomings.</p>
+								<ul>
+									<li><b>walking around</b> → who knows what you’ll end up with!; can be very tiring when user is hungry; can miss out on special deals or coupons; often uncertain of menu, prices, or quality</li>
+									<li><b>Google</b> → results of search are too numerous and too generic, no easy way to compare restaurants, no filters, not visually appealing, often missing information about restaurant, not all restaurants are included, consumes large amount of data</li>
+									<li><b>alternate app: Yelp</b> → offers an overwhelming amount of choices – easy to get lost and frustrated, especially since the app contains all local businesses and not just food; cannot apply filters in order of importance; not visually appealing; price scale varies by location; can’t share experience on social media; consumes huge amount of data</li>
+									<li><b>alternate app: (specialty food apps)</b> → usually have a singular focus (make reservations, order takeout or delivery), typically for people who already know exactly what they want to eat, not an all-in-one solution</li>
+								</ul>
+								<p>In response to these shortcomings, it was obvious that Crave would need to offer the user total control over their search by allowing them to apply popular filters (like distance, price, and rating) in order of importance. The app also needed to provide to option to take the choice out of the user’s hands completely via the “surprise me!” or recommendation features to alleviate demotivating indecision.</p>
+								<p>Crave needed to have a specific focus on food, but also offer options to make reservations, order takeout / delivery, and earn rewards. To encourage user involvement, users are rewarded for frequenting their favorite restaurants and for writing reviews, posting photos, and sharing their dining experience on social media.</p>
+							</div> <!-- alternatives row -->
+
+							<div class="row"> <!-- persona -->
+								<h4>Persona</h4>
+								<p>To help keep my mind on the user, I wanted to create a simple user persona to represent the type of person who would use Crave. Meet Jordan.</p>
+							
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 extended"> <!-- profile -->
+									<a class="expand" href="assets/images/crave/profile.jpg" data-toggle="lightbox" data-gallery="crave" data-title="User persona."><img class="img-fluid" src="assets/images/crave/profile.jpg" alt="jordan"></a>
+								</div> <!-- profile column -->
+							</div> <!-- persona row -->
+
+							<div class="row"> <!-- information architecture -->
+								<h3>Information Architecture</h3>
+								<p><b>Most of my ideas are born as messy pencil scribbles on a post-it note.</b> I roughly sketch the general layout of the design and make notes on different features or functions I’d like to include. Once I’ve got a clearer idea of what needs to happen, <b>I go back and create a wireframe</b>, placing things more definitively. I tend to prefer doing this with pen and paper too—it just feels more intuitive, and you can’t beat having an eraser.</p>
+								<p>These sketches and wireframes inevitably get tweaked as I transition to creating a <b>high-fidelity prototype in Photoshop</b>. I find it a lot easier (and more fun!) to envision a final product once there’s a bit of color on the drawing board.</p>
+							
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 expanded"> <!-- sketch -->
+									<a class="expand" href="assets/images/crave/sketch.jpg" data-toggle="lightbox" data-gallery="crave" data-title="Initial sketch."><img class="img-fluid" src="assets/images/crave/sketch.jpg" alt="sketch"></a>
+								</div> <!-- sketch column -->
+							</div> <!-- information architecture row -->
+
+							<div class="row"> <!-- result -->
+								<div class="spacer"></div>
+								<h2>Result</h2>
+								<p><b>Here is Crave.</b> It’s important to note that since this is a personal project created for my own practice and edification, this app does not actually exist, nor have I created a functional prototype.</p>
+								<p>If I lived in a fantasy world where I had unlimited time and money, I’d love to go back and create a functional prototype of this app, conduct user testing, and implement further iterations.</p>
+							</div> <!-- result row -->
+
+						</div> <!-- text column -->
+					</div> <!-- content row -->
+				</div> <!-- app column -->
+
+			</div> <!-- main content row -->
+		</div> <!-- container-fluid for all content -->
+
+		<!-- JAVASCRIPT AND JQUERY -->
+		<script src="https://code.jquery.com/jquery.js"></script> <!-- jQuery -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script> <!-- Ekko Lightbox JavaScript -->
+		<script src="assets/javascript/app.js"></script>
+	</body>
+</html>

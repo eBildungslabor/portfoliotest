@@ -1,0 +1,93 @@
+<!-- play with navbar, fix navlink spacing on mobile, fix header -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+		<title>Kara Mui</title>
+		<link rel="shortcut icon" type="image/jpg" href="assets/images/misc/favicon.jpg"/>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!-- Bootstrap v4.0 -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+
+	<body>
+		<div class="container-fluid"> <!-- all content -->
+			<div class="row"> <!-- all content -->
+				<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 sidebar"> <!-- sidebar column -->
+					<div class="row"> <!-- about -->
+						<a class="home" href="index.html">Kara Mui</a>
+						<p>My name is Kara Mui and I am a full-stack web developer with several years of design experience. I am proficient in a variety of programming languages, which I use to create elegant, intuitive websites and applications. I excel at analysis, communication, and organization, and am always eager to learn new skills.</p>
+						<a href="mailto:kara.mui@dartmouth.edu" target="_blank"><img class="social" src="assets/images/social/email.png" alt="Email" title="Email"></a> <!-- icon by Sebastien Gabriel --> <a href="https://github.com/karamui/" target="_blank"><img class="social" src="assets/images/social/github.png" alt="GitHub" title="GitHub"></a> <!-- icon by Daniel Bruce --> <a href="https://www.linkedin.com/in/karamui/" target="_blank"><img class="social" src="assets/images/social/linkedin.png" alt="LinkedIn" title="LinkedIn"></a> <!-- icon by Freepik -->
+
+						<h3 class="resume" data-toggle="modal" data-target="#resume">Resume</h3>
+						<button id="returntotop" title="Return to top."><img class="nav" src="assets/images/misc/up-arrow.png" alt="return"></button> <!-- icon by Hanan -->
+					</div> <!-- about row -->
+				</div> <!-- sidebar column -->
+
+				<!-- REFERENCE: https://getbootstrap.com/docs/4.0/components/modal/ -->
+				<div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="Resume" aria-hidden="true"> <!-- resume modal -->
+				  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				    	<div class="modal-content">
+				      		<div class="modal-header">
+				        		<h3 class="modal-title">Resume</h3>
+				        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          			<span aria-hidden="true">&times;</span>
+				       		 	</button>
+				      		</div>
+
+					      	<div class="modal-body">
+					        	<p>What a resume!</p>
+					      	</div>
+				    	</div> <!-- modal content -->
+				  	</div> <!-- modal-dialog -->
+				</div> <!-- resume modal -->
+
+				<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 main"> <!-- portfolio -->
+					<div class="row filterlist"> <!-- filters -->
+						<p class="filtertext">Filters</p>
+						<label class="filter" id="application"><input class="hidden" type="checkbox" value="application">Application</label>
+						<label class="filter" id="website"><input class="hidden" type="checkbox" value="website">Website</label>
+						<label class="filter" id="mobile"><input class="hidden" type="checkbox" value="mobile">Mobile</label>
+						<label class="filter" id="mockup"><input class="hidden" type="checkbox" value="mockup">Mockup</label>
+						<label class="filter" id="html"><input class="hidden" type="checkbox" value="html">HTML</label>
+						<label class="filter" id="css"><input class="hidden" type="checkbox" value="css">CSS</label>				
+					</div> <!-- filters row -->
+
+					<div class="row grid" id="gallery"> <!-- gallery -->
+						<div class="grid-item application website mobile mockup" id="grid-item-libre" value="libre">
+							<span class="title" value="libre">Libre</span><img class="img-fluid" id="libre" src="assets/images/libre/thumbnail.jpg" alt="libre">
+						</div>
+						<div class="grid-item website mockup" id="grid-item-vindictus">
+							<span class="title" value="vindictus">Vindictus</span><img class="img-fluid" id="vindictus" src="assets/images/vindictus/thumbnail_ext.jpg" alt="vindictus">
+						</div>
+						<div class="grid-item application mobile mockup" id="grid-item-crave">
+							<a href="crave.html"><span class="title" value="crave">Crave</span><img class="img-fluid" id="crave" src="assets/images/crave/thumbnail.jpg" alt="crave"></a>
+						</div>
+						<div class="grid-item application mobile mockup" id="grid-item-vokal">
+							<a href="vokal.html"><span class="title" value="vokal">Vokal</span><img class="img-fluid" id="vokal" src="assets/images/vokal/thumbnail.jpg" alt="vokal"></a>
+						</div>
+					</div> <!-- gallery row -->
+				</div> <!-- portfolio column -->
+
+			</div> <!-- main content row -->
+		</div> <!-- container-fluid for all content -->
+
+		<!-- JAVASCRIPT AND JQUERY -->
+		<script src="https://code.jquery.com/jquery.js"></script> <!-- jQuery -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript -->
+		<script src="assets/javascript/imagesloaded.js"></script> <!-- imagesLoaded -->
+		<script src="assets/javascript/masonry.js"></script> <!-- Masonry -->
+		<script src="assets/javascript/multiplefiltermasonry.js"></script> <!-- Multiple Filter Masonry -->
+		<script src="assets/javascript/portfolio.js"></script>
+	</body>
+</html>
