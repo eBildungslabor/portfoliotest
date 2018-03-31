@@ -1,5 +1,3 @@
-<!-- play with navbar, fix navlink spacing on mobile, fix header -->
-
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -53,21 +51,61 @@
 				</div> <!-- resume modal -->
 
 				<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 main"> <!-- portfolio -->
-					<div class="row filterlist"> <!-- filters -->
-						<p class="filtertext">Filters</p>
+					<div class="row filterlist"> <!-- type -->
+						<p class="filtertext">Type</p>
 						<label class="filter" id="application"><input class="hidden" type="checkbox" value="application">Application</label>
-						<label class="filter" id="website"><input class="hidden" type="checkbox" value="website">Website</label>
+						<label class="filter" id="game"><input class="hidden" type="checkbox" value="game">Game</label>
 						<label class="filter" id="mobile"><input class="hidden" type="checkbox" value="mobile">Mobile</label>
 						<label class="filter" id="mockup"><input class="hidden" type="checkbox" value="mockup">Mockup</label>
+						<label class="filter" id="website"><input class="hidden" type="checkbox" value="website">Website</label>
+					</div> <!-- type row -->
+
+					<div class="row filterlist"> <!-- technology -->
+						<p class="filtertext">Technology</p>
 						<label class="filter" id="html"><input class="hidden" type="checkbox" value="html">HTML</label>
-						<label class="filter" id="css"><input class="hidden" type="checkbox" value="css">CSS</label>				
-					</div> <!-- filters row -->
+						<label class="filter" id="css"><input class="hidden" type="checkbox" value="css">CSS / Bootstrap</label>	
+						<label class="filter" id="javascript"><input class="hidden" type="checkbox" value="javascript">JavaScript / jQuery</label>	
+						<label class="filter" id="nodejs"><input class="hidden" type="checkbox" value="nodejs">Node.js</label>
+						<label class="filter" id="expressjs"><input class="hidden" type="checkbox" value="expressjs">Express.js</label>
+						<label class="filter" id="reactjs"><input class="hidden" type="checkbox" value="reactjs">React.js</label>
+						<label class="filter" id="handlebarsjs"><input class="hidden" type="checkbox" value="handlebarsjs">Handlebars.js</label>
+						<label class="filter" id="ajax"><input class="hidden" type="checkbox" value="ajax">AJAX / APIs</label>		
+						<label class="filter" id="firebase"><input class="hidden" type="checkbox" value="firebase">Firebase</label>
+						<label class="filter" id="mysql"><input class="hidden" type="checkbox" value="mysql">MySQL</label>
+					</div> <!-- technology row -->
 
 					<div class="row grid" id="gallery"> <!-- gallery -->
-						<div class="grid-item application website mobile mockup" id="grid-item-libre" value="libre">
+						<div class="grid-item application mobile website html css javascript nodejs expressjs reactjs ajax mysql" id="grid-item-studybuddy" value="studybuddy">
+							<a href="https://github.com/ChetanAudipudy/StudyBuddy" target="_blank"><span class="title" value="studybuddy">StudyBuddy</span><img class="img-fluid" id="studybuddy" src="assets/images/github/studybuddy.jpg" alt="studybuddy"></a>
+						</div>
+						<div class="grid-item grid-border application mobile website html css javascript nodejs expressjs handlebarsjs mysql" id="grid-item-burger" value="burger">
+							<a href="https://github.com/karamui/Eat-da-Burger" target="_blank"><span class="title" value="burger">Eat-da-Burger</span><img class="img-fluid" id="burger" src="assets/images/github/burger.jpg" alt="burger"></a>
+						</div>
+						<div class="grid-item application mobile website html css javascript nodejs expressjs ajax mysql" id="grid-item-friend" value="friend">
+							<a href="https://github.com/karamui/FriendFinder" target="_blank"><span class="title" value="friend">Friend Finder</span><img class="img-fluid" id="friend" src="assets/images/github/friend.jpg" alt="friend"></a>
+						</div>
+						<div class="grid-item application javascript nodejs ajax" id="grid-item-liri" value="liri">
+							<a href="https://github.com/karamui/Liri" target="_blank"><span class="title" value="liri">Liri</span><!--<img class="img-fluid" id="liri" src="assets/images/github/liri.jpg" alt="liri">--></a>
+						</div>
+						<div class="grid-item application javascript nodejs mysql" id="grid-item-bamazon" value="bamazon">
+							<a href="https://github.com/karamui/Bamazon" target="_blank"><span class="title" value="bamazon">Bamazon</span><!--<img class="img-fluid" id="bamazon" src="assets/images/github/bamazon.jpg" alt="bamazon">--></a>
+						</div>
+						<div class="grid-item grid-border application mobile website html css javascript ajax firebase" id="grid-item-rove" value="rove">
+							<a href="https://github.com/karamui/Rove" target="_blank"><span class="title" value="rove">Rove</span><img class="img-fluid" id="rove" src="assets/images/github/rove.jpg" alt="rove"></a>
+						</div>
+						<div class="grid-item grid-border application game mobile website html css javascript firebase" id="grid-item-rps" value="rps">
+							<a href="https://github.com/karamui/RPS-Multiplayer" target="_blank"><span class="title" value="rps">Multiplayer Rock, Paper, Scissors</span><img class="img-fluid" id="rps" src="assets/images/github/rps.jpg" alt="rps"></a>
+						</div>
+						<div class="grid-item application game mobile website html css javascript" id="grid-item-hobbit" value="hobbit">
+							<a href="https://github.com/karamui/Hobbit-Trivia" target="_blank"><span class="title" value="hobbit"><i>The Hobbit</i> Trivia Game</span><img class="img-fluid" id="hobbit" src="assets/images/github/hobbit.jpg" alt="hobbit"></a>
+						</div>
+						<div class="grid-item application game mobile website html css javascript" id="grid-item-rogueone" value="rogueone">
+							<a href="https://github.com/karamui/Rogue-One-RPG" target="_blank"><span class="title" value="rogueone"><i>Rogue One</i> RPG</span><img class="img-fluid" id="rogueone" src="assets/images/github/rogueone.jpg" alt="rogueone"></a>
+						</div>
+						<div class="grid-item application mobile mockup website" id="grid-item-libre" value="libre">
 							<span class="title" value="libre">Libre</span><img class="img-fluid" id="libre" src="assets/images/libre/thumbnail.jpg" alt="libre">
 						</div>
-						<div class="grid-item website mockup" id="grid-item-vindictus">
+						<div class="grid-item mockup website" id="grid-item-vindictus">
 							<span class="title" value="vindictus">Vindictus</span><img class="img-fluid" id="vindictus" src="assets/images/vindictus/thumbnail_ext.jpg" alt="vindictus">
 						</div>
 						<div class="grid-item application mobile mockup" id="grid-item-crave">
