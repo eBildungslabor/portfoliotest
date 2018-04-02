@@ -1,11 +1,9 @@
-<!-- play with navbar, fix navlink spacing on mobile, fix header -->
-
 <!DOCTYPE html>
 <html lang="en-us">
 
 	<head>
-		<title>Rogue One RPG</title>
-		<link rel="shortcut icon" type="image/jpg" href="assets/images/misc/favicon.jpg"/>
+		<title>The Hobbit Trivia Game</title>
+		<link rel="shortcut icon" type="image/jpg" href="../assets/images/misc/favicon.jpg"/>
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +13,10 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
 
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/ekko-lightbox.css"> <!-- Ekko Lightbox -->
+		<link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/ekko-lightbox.css"> <!-- Ekko Lightbox -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!-- Bootstrap v4.0 -->
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 	</head>
 
 	<body>
@@ -26,12 +24,12 @@
 			<div class="row"> <!-- all content -->
 				<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 sidebar"> <!-- sidebar column -->
 					<div class="row"> <!-- about -->
-						<a class="home" href="index.html">Kara Mui</a>
+						<a class="home" href="../index.html">Kara Mui</a>
 						<p>My name is Kara Mui and I am a full-stack web developer with several years of design experience. I am proficient in a variety of programming languages, which I use to create elegant, intuitive websites and applications. I excel at analysis, communication, and organization, and am always eager to learn new skills.</p>
-						<a href="mailto:kara.mui@dartmouth.edu" target="_blank"><img class="social" src="assets/images/social/email.png" alt="Email" title="Email"></a> <!-- icon by Sebastien Gabriel --> <a href="https://github.com/karamui/" target="_blank"><img class="social" src="assets/images/social/github.png" alt="GitHub" title="GitHub"></a> <!-- icon by Daniel Bruce --> <a href="https://www.linkedin.com/in/karamui/" target="_blank"><img class="social" src="assets/images/social/linkedin.png" alt="LinkedIn" title="LinkedIn"></a> <!-- icon by Freepik -->
+						<a href="mailto:kara.mui@dartmouth.edu" target="_blank"><img class="social" src="../assets/images/social/email.png" alt="Email" title="Email"></a> <!-- icon by Sebastien Gabriel --> <a href="https://github.com/karamui/" target="_blank"><img class="social" src="../assets/images/social/github.png" alt="GitHub" title="GitHub"></a> <!-- icon by Daniel Bruce --> <a href="https://www.linkedin.com/in/karamui/" target="_blank"><img class="social" src="../assets/images/social/linkedin.png" alt="LinkedIn" title="LinkedIn"></a> <!-- icon by Freepik -->
 
 						<h3 class="resume" data-toggle="modal" data-target="#resume">Resume</h3>
-						<button id="returntotop" title="Return to top."><img class="nav" src="assets/images/misc/up-arrow.png" alt="return"></button> <!-- icon by Hanan -->
+						<button id="returntotop" title="Return to top."><img class="nav" src="../assets/images/misc/up-arrow.png" alt="return"></button> <!-- icon by Hanan -->
 					</div> <!-- about row -->
 				</div> <!-- sidebar column -->
 
@@ -56,13 +54,15 @@
 				<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 main"> <!-- app -->
 					<div class="row"> <!-- content -->
 						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"> <!-- images -->
-							<img class="img-fluid" src="assets/images/github/rogueone.jpg" alt="rogueone">
+							<img class="img-fluid" src="../assets/images/github/hobbit.jpg" alt="hobbit">
+							<div class="spacer"></div>
+							<img class="img-fluid" src="../assets/images/github/hobbit2.jpg" alt="hobbit2">
 							<div class="spacer"></div>
 						</div> <!-- images column -->
 						
 						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 textblock"> <!-- text -->
 							<div class="row"> <!-- title -->
-								<h1>Rogue One RPG</h1>
+								<h1>The Hobbit Trivia Game</h1>
 							</div> <!-- title row -->
 
 							<div class="row"> <!-- tags -->
@@ -78,17 +78,16 @@
 							<div class="row"> <!-- description -->
 								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 extended2">
 									<div class="spacer"></div>
-									<p>A fully-responsive JavaScript and jQuery role-playing game based on <i>Rogue One: A Star Wars Story</i>.</p>
+									<p>A fully-responsive JavaScript and jQuery trivia game based on <i>The Hobbit.</i>.</p>
 								</div> <!-- description column -->
 							</div> <!-- description row -->
 
 							<div class="row"> <!-- instructions -->
 								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 extended2">
 									<h2>Instructions</h2>
-									<p><b>You can play with this application on <a href="https://karamui.github.io/Rogue-One-RPG" target="_blank" class="blue">GitHub.</a></b></p>
-									<p>Click to select your hero and double click to choose an ally to help you defeat The Empire!</p>
-									<p>Together you will face an enemy of your choosing. Your strength grows with each attack you make, so choose your opponents wisely and don't be disheartened when your enemy strikes back! In the face of certain defeat, use The Force to turn the tide of battle — but be wary, you may only call upon it once!</p>
-									<p>Your rebellion succeeds when you have defeated all enemies. May The Force be with you!</p>
+									<p><b>You can play with this application on <a href="https://karamui.github.io/Hobbit-Trivia" target="_blank" class="blue">GitHub.</a></b></p>
+									<p>All questions will be related to the film trilogy The Hobbit. You will have thirty seconds to select an answer to each question, after which the correct answer will be revealed.</p>
+									<p>Answering correctly will earn you five points, while answering incorrectly or not at all will earn you zero points. Your final score will be shown at the end of the game. Good luck!</p>
 								</div> <!-- instructions column -->
 							</div> <!-- instructions row -->
 
@@ -108,8 +107,8 @@
 							</div> <!-- technologies row -->
 
 							<div class="row"> <!-- buttons -->
-								<button class="view"><a href="https://karamui.github.io/Rogue-One-RPG" target="_blank">Play Now</a></button>
-								<button class="view"><a href="https://github.com/karamui/Rogue-One-RPG" target="_blank">View on GitHub</a></button>
+								<button class="view"><a href="https://karamui.github.io/Hobbit-Trivia" target="_blank">Play Now</a></button>
+								<button class="view"><a href="https://github.com/karamui/Hobbit-Trivia" target="_blank">View on GitHub</a></button>
 							</div> <!-- buttons row -->
 
 						</div> <!-- text column -->
@@ -123,6 +122,6 @@
 		<script src="https://code.jquery.com/jquery.js"></script> <!-- jQuery -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script> <!-- Ekko Lightbox JavaScript -->
-		<script src="assets/javascript/app.js"></script>
+		<script src="../assets/javascript/app.js"></script>
 	</body>
 </html>
