@@ -32,9 +32,18 @@ div.spacer {
 	height: 25px;
 }
 
+div.spacer2 {
+	height: 15px;
+}
+
 div.extended {
 	margin: 0px !important;
 	margin-bottom: 15px !important;
+	padding: 0px !important;
+}
+
+div.extended2 {
+	margin: 0px !important;
 	padding: 0px !important;
 }
 
@@ -93,12 +102,21 @@ h4 {
 	font-weight: bold;
 }
 
+i {
+	font-style: italic;
+}
+
 a {
 	color: #ffffff;
 }
 
 a:hover {
 	color: #ffffff;
+	text-decoration: none;
+}
+
+a.blue, a.blue:hover {
+	color: #00c9f4;
 }
 
 a.expand {
@@ -156,6 +174,28 @@ img.social {
 	height: 40px;
 	width: 40px;
 	margin-right: 5px;
+}
+
+/* ------------------------------------ BUTTONS */
+
+button.view {
+	width: 100% !important;
+	min-height: 50px;
+	margin-bottom: 15px;
+	padding: 10px auto !important;
+	font-family: "Raleway", sans-serif;
+	font-size: 25px;
+	border: none;
+	border-radius: 100px;
+	color: #ffffff;
+	background: -webkit-linear-gradient(135deg, #00c9f4, #84fff2);
+    background: -moz-linear-gradient(135deg, #00c9f4, #84fff2);
+    background: -o-linear-gradient(135deg, #00c9f4, #84fff2);
+    background: linear-gradient(135deg, #00c9f4, #84fff2);
+}
+
+button.view:hover {
+	background: #4c4c4c;
 }
 
 /* ------------------------------------ GALLERY */
