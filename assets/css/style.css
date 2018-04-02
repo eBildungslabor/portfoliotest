@@ -283,7 +283,7 @@ div.grid-item {
     transition: all 1s ease;
 }
 
-div.grid-border {
+.grid-border {
 	border: 2px solid #252525;
 }
 

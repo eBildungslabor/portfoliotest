@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+		<title>Rock, Paper, Scissors!</title>
+		<link rel="shortcut icon" type="image/jpg" href="../assets/images/misc/favicon.jpg"/>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/ekko-lightbox.css"> <!-- Ekko Lightbox -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!-- Bootstrap v4.0 -->
+		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	</head>
+
+	<body>
+		<div class="container-fluid"> <!-- all content -->
+			<div class="row"> <!-- all content -->
+				<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 sidebar"> <!-- sidebar column -->
+					<div class="row"> <!-- about -->
+						<a class="home" href="../index.html">Kara Mui</a>
+						<p>My name is Kara Mui and I am a full-stack web developer with several years of design experience. I am proficient in a variety of programming languages, which I use to create elegant, intuitive websites and applications. I excel at analysis, communication, and organization, and am always eager to learn new skills.</p>
+						<a href="mailto:kara.mui@dartmouth.edu" target="_blank"><img class="social" src="../assets/images/social/email.png" alt="Email" title="Email"></a> <!-- icon by Sebastien Gabriel --> <a href="https://github.com/karamui/" target="_blank"><img class="social" src="../assets/images/social/github.png" alt="GitHub" title="GitHub"></a> <!-- icon by Daniel Bruce --> <a href="https://www.linkedin.com/in/karamui/" target="_blank"><img class="social" src="../assets/images/social/linkedin.png" alt="LinkedIn" title="LinkedIn"></a> <!-- icon by Freepik -->
+
+						<h3 class="resume" data-toggle="modal" data-target="#resume">Resume</h3>
+						<button id="returntotop" title="Return to top."><img class="nav" src="../assets/images/misc/up-arrow.png" alt="return"></button> <!-- icon by Hanan -->
+					</div> <!-- about row -->
+				</div> <!-- sidebar column -->
+
+				<!-- REFERENCE: https://getbootstrap.com/docs/4.0/components/modal/ -->
+				<div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="Resume" aria-hidden="true"> <!-- resume modal -->
+				  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				    	<div class="modal-content">
+				      		<div class="modal-header">
+				        		<h3 class="modal-title">Resume</h3>
+				        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          			<span aria-hidden="true">&times;</span>
+				       		 	</button>
+				      		</div>
+
+					      	<div class="modal-body">
+					        	<a href="https://drive.google.com/file/d/1ceETIsBkkGTOdUxLk6LgtWi-DHmI8SUH/view?usp=sharing" target="_blank" title="Click to view resume."><img class="img-fluid" id="resume" src="../assets/documents/MuiResume.jpg" alt="resume"></a>
+					      	</div>
+				    	</div> <!-- modal content -->
+				  	</div> <!-- modal-dialog -->
+				</div> <!-- resume modal -->
+
+				<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 main"> <!-- app -->
+					<div class="row"> <!-- content -->
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"> <!-- images -->
+							<img class="img-fluid grid-border" src="../assets/images/github/rps.jpg" alt="rps">
+							<div class="spacer"></div>
+						</div> <!-- images column -->
+						
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 textblock"> <!-- text -->
+							<div class="row"> <!-- title -->
+								<h1>Rock, Paper, Scissors!</h1>
+							</div> <!-- title row -->
+
+							<div class="row"> <!-- tags -->
+								<label class="filter" id="application">Application</label>
+								<label class="filter" id="game">Game</label>
+								<label class="filter" id="mobile">Mobile</label>	
+								<label class="filter" id="website">Website</label>	
+								<label class="filter" id="html">HTML</label>
+								<label class="filter" id="css">CSS / Bootstrap</label>
+								<label class="filter" id="javascript">JavaScript / jQuery</label>	
+								<label class="filter" id="firebase">Firebase</label>
+							</div> <!-- tags row -->
+
+							<div class="row"> <!-- description -->
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 extended2">
+									<div class="spacer"></div>
+									<p>A fully-responsive multiplayer rock-paper-scissors game with built-in chat functionality.</p>
+								</div> <!-- description column -->
+							</div> <!-- description row -->
+
+							<div class="row"> <!-- instructions -->
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 extended2">
+									<h2>Instructions</h2>
+									<p><b>You can play with this application on <a href="https://karamui.github.io/RPS-Multiplayer" target="_blank" class="blue">GitHub.</a></b></p>
+									<p>Submit your name to begin the game. Select either rock, paper, or scissors when prompted. Your opponent will do the same. Rock beats scissors, scissors beats paper, and paper beats rock. Good luck, and have fun!</p>
+								</div> <!-- instructions column -->
+							</div> <!-- instructions row -->
+
+							<div class="row"> <!-- technologies -->
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 extended2">
+									<h2>Technologies Used</h2>
+									<p><b>The following technologies were used to create this application:</b></p>
+									<ul>
+										<li class="tight">HTML</li>
+										<li class="tight">CSS</li>
+										<li class="tight">Bootstrap</li>
+										<li class="tight">JavaScript</li>
+										<li class="tight">jQuery</li>
+										<li class="tight">Firebase</li>
+									</ul>
+								<div class="spacer"></div>
+								</div> <!-- technologies column -->
+							</div> <!-- technologies row -->
+
+							<div class="row"> <!-- buttons -->
+								<button class="view"><a href="https://karamui.github.io/RPS-Multiplayer" target="_blank">Play Now</a></button>
+								<button class="view"><a href="https://github.com/karamui/RPS-Multiplayer" target="_blank">View on GitHub</a></button>
+							</div> <!-- buttons row -->
+
+						</div> <!-- text column -->
+					</div> <!-- content row -->
+				</div> <!-- app column -->
+
+			</div> <!-- main content row -->
+		</div> <!-- container-fluid for all content -->
+
+		<!-- JAVASCRIPT AND JQUERY -->
+		<script src="https://code.jquery.com/jquery.js"></script> <!-- jQuery -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script> <!-- Ekko Lightbox JavaScript -->
+		<script src="../assets/javascript/app.js"></script>
+	</body>
+</html>
