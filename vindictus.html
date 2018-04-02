@@ -1,0 +1,210 @@
+<!-- play with navbar, fix navlink spacing on mobile, fix header -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+		<title>Vindictus Website Redesign</title>
+		<link rel="shortcut icon" type="image/jpg" href="assets/images/misc/favicon.jpg"/>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/ekko-lightbox.css"> <!-- Ekko Lightbox -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!-- Bootstrap v4.0 -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+
+	<body>
+		<div class="container-fluid"> <!-- all content -->
+			<div class="row"> <!-- all content -->
+				<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 sidebar"> <!-- sidebar column -->
+					<div class="row"> <!-- about -->
+						<a class="home" href="index.html">Kara Mui</a>
+						<p>My name is Kara Mui and I am a full-stack web developer with several years of design experience. I am proficient in a variety of programming languages, which I use to create elegant, intuitive websites and applications. I excel at analysis, communication, and organization, and am always eager to learn new skills.</p>
+						<a href="mailto:kara.mui@dartmouth.edu" target="_blank"><img class="social" src="assets/images/social/email.png" alt="Email" title="Email"></a> <!-- icon by Sebastien Gabriel --> <a href="https://github.com/karamui/" target="_blank"><img class="social" src="assets/images/social/github.png" alt="GitHub" title="GitHub"></a> <!-- icon by Daniel Bruce --> <a href="https://www.linkedin.com/in/karamui/" target="_blank"><img class="social" src="assets/images/social/linkedin.png" alt="LinkedIn" title="LinkedIn"></a> <!-- icon by Freepik -->
+
+						<h3 class="resume" data-toggle="modal" data-target="#resume">Resume</h3>
+						<button id="returntotop" title="Return to top."><img class="nav" src="assets/images/misc/up-arrow.png" alt="return"></button> <!-- icon by Hanan -->
+					</div> <!-- about row -->
+				</div> <!-- sidebar column -->
+
+				<!-- REFERENCE: https://getbootstrap.com/docs/4.0/components/modal/ -->
+				<div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="Resume" aria-hidden="true"> <!-- resume modal -->
+				  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				    	<div class="modal-content">
+				      		<div class="modal-header">
+				        		<h3 class="modal-title">Resume</h3>
+				        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          			<span aria-hidden="true">&times;</span>
+				       		 	</button>
+				      		</div>
+
+					      	<div class="modal-body">
+					        	<p>What a resume!</p>
+					      	</div>
+				    	</div> <!-- modal content -->
+				  	</div> <!-- modal-dialog -->
+				</div> <!-- resume modal -->
+
+				<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 main"> <!-- app -->
+					<div class="row"> <!-- content -->
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"> <!-- images -->
+							<img class="img-fluid" src="assets/images/vindictus/presentation.jpg" alt="presentation">
+							<div class="spacer"></div>
+							<a class="expand" href="assets/images/vindictus/mockup1.jpg" data-toggle="lightbox" data-gallery="vindictus" data-title="Home page with expanded game menu and login options."><img class="img-fluid" src="assets/images/vindictus/mockup1.jpg" alt="mockup1"></a>
+							<div class="spacer"></div>
+							<a class="expand" href="assets/images/vindictus/mockup2.jpg" data-toggle="lightbox" data-gallery="vindictus" data-title="Home page with expanded options menu and account menu."><img class="img-fluid" src="assets/images/vindictus/mockup2.jpg" alt="mockup2"></a>
+							<div class="spacer"></div>
+							<a class="expand" href="assets/images/vindictus/mockup3.jpg" data-toggle="lightbox" data-gallery="vindictus" data-title="Home page with special event announcement."><img class="img-fluid" src="assets/images/vindictus/mockup3.jpg" alt="mockup3"></a>
+							<div class="spacer"></div>
+							<a class="expand" href="assets/images/vindictus/mockup4.jpg" data-toggle="lightbox" data-gallery="vindictus" data-title="Home page (scrolled down) with expanded game menu and account menu."><img class="img-fluid" src="assets/images/vindictus/mockup4.jpg" alt="mockup4"></a>
+							<div class="spacer"></div>
+							<a class="expand" href="assets/images/vindictus/mockup5.jpg" data-toggle="lightbox" data-gallery="vindictus" data-title="Home page (scrolled down) wth expanded options menu and login options."><img class="img-fluid" src="assets/images/vindictus/mockup5.jpg" alt="mockup5"></a>
+							<div class="spacer"></div>
+							<a class="expand" href="assets/images/vindictus/mockup6.jpg" data-toggle="lightbox" data-gallery="vindictus" data-title="Home page (scrolled down) with maintenance announcement."><img class="img-fluid" src="assets/images/vindictus/mockup6.jpg" alt="mockup6"></a>
+							<div class="spacer"></div>
+						</div> <!-- images column -->
+						
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 textblock"> <!-- text -->
+							<div class="row"> <!-- title -->
+								<h1>Vindictus Website Redesign</h1>
+							</div> <!-- title row -->
+
+							<div class="row"> <!-- tags -->
+								<label class="filter" id="mockup">Mockup</label>	
+								<label class="filter" id="website">Website</label>			
+							</div> <!-- tags row -->
+
+							<div class="row"> <!-- description -->
+								<div class="spacer"></div>
+								<p><b>Enter a dark and sinister world where you must battle for survival.</b> Vindictus is a free-to-play MMO (massively multiplayer online game) with intense real-time combat, unprecedented realism, and glorious visuals. Although the game itself is a standout, its current homepage is lackluster.</p>
+								<p><b>My first impression of the game’s website</b> was that it was very dark and monotonous in its color scheme, which translates to an uninviting and unappealing experience for its visitors. The website currently uses two navigational menus and a text-heavy, minimalistic layout which somehow winds up feeling clunky yet sparse. Game events and community highlights fade into the background, and some information is outdated. By not providing a calendar to showcase future events and updates, the game is really missing out on generating player excitement for what is to come.</p>
+							</div> <!-- description row -->
+
+							<div class="row"> <!-- solution -->
+								<div class="spacer"></div>
+								<h2>Proposed Solution</h2>
+								<p><b>Here is my unofficial redesign concept for Vindictus’ homepage.</b> My goal was to create a stronger, more emotional first impression for the game in order to better advertise its content updates, special events, and community—which would in turn increase its playerbase. <b>I wanted the new website to appeal to both new and old players</b> by modernizing its look and emphasizing the best features of the game.</p>
+								<p><b>I strove to increase appeal</b> by shifting the focus from text to visuals, introducing more colors to help distinguish the different types of featured news, and simplifying navigation overall. I wanted to highlight content updates and current events to keep the game feeling fresh, and to generate excitement for future events by introducing a color-coded calendar feature to the homepage. I also wanted to draw greater attention to the game’s community to encourage involvement from new players and to reward old ones for their continued participation.</p>
+								<p><b>Scroll on to learn more about how I arrived at this solution.</b></p>
+							</div> <!-- solution row -->
+
+							<div class="row"> <!-- process title -->
+								<div class="spacer"></div>
+								<h2>Process &amp; Challenges</h2>
+							</div> <!-- process title row -->
+
+							<div class="row"> <!-- user research -->
+								<h3>User Research</h3>
+							</div> <!-- user research row -->
+
+							<div class="row"> <!-- users -->
+								<h4>Users</h4>
+								<p><b>It comes as no surprise that the playerbase for a massively multiplayer online game is, well, massive.</b> There is incredible range and diversity among those who play video games, so narrowing down my user base was a bit of a challenge. <b>I ultimately decided that Vindictus would best appeal to users between the ages of 13 and 30</b>—a user base of students and young professionals who are “gamers” or who have an interest in activities which promote escapism, competition, or feelings of progress and success.</p>
+							</div> <!-- users row -->
+
+							<div class="row"> <!-- problems -->
+								<h4>Problems &amp; Fears</h4>
+								<p>There are a lot of stigmas attached to playing video games which could easily discourage first-time players. <b>Despite this, there are still plenty of problems, fears, and desires which can be solved by gaming.</b> I wanted to examine some of the most obvious concerns across the board.</p>
+								<p>Thus, my final list of user-defined problems and fears (and potential solutions to them) looked something like this:</p>
+								<ul>
+									<li><b>user is stressed out / needs a competitive outlet</b> → game offers a way for the user to feel as though they are progressing or succeeding, and offers opportunities to compete with other players or against oneself as desired</li>
+									<li><b>user is too tired for exercise after a long day but still needs mental stimulation</b> → game is not physically demanding, and can be as mentally taxing as the user chooses (can range from sedentary, low-pressure activities to more involved strategic thinking and situations requiring quick reactions)</li>
+									<li><b>user needs an activity to do with friends</b> → game offers party play, so users can interact with others both “in town” and in “battles” or “raids”</li>
+									<li><b>user is bored of current games and wants to try something new</b> → game appeals to new and old players through a wide variety of content and events and its distinguishing game features</li>
+									<li><b>user wants to be more social / involved in the game community</b> → game has an active community on forums and social media channels, and offers many contests and events to encourage player involvement and multiplayer cooperation</li>
+									<li><b>user doesn’t want to miss out on events, news, contests, etc</b> → game homepage is kept up-to-date and offers a glimpse into the future via calendar</li>
+									<li><b>user is starting to lose interest in the game</b> → game offers incentive to return in the form of special events or packages to players who have not logged in within a certain amount of time</li>
+									<li><b>user is a first-time gamer and is afraid of being labeled a “geek” or “nerd”</b> → game has an active, welcoming community and offers plenty of opportunity for the user to meet new friends or involve their existing friends in the game</li>
+									<li><b>new user is afraid the game will be boring</b> → game offers a wide variety of appealing content and visuals – there is something to be found for every type of player</li>
+									<li><b>new user is afraid the game will be too hard</b> → game offers a variety of modes (including easy mode, normal mode, hard mode, and hero mode); players can play solo or in parties; many tutorials are offered by community on specific characters or battles</li>
+									<li><b>new user is worried that there will be no one to play with</b> → game has an active community</li>
+									<li><b>new user is worried there will be no “cool stuff” or fun events or freebies</b> → game regularly advertises free events, content updates, and community contests on its homepage</li>
+									<li><b>new user is worried the game will just consist of “fighting and killing things”</b> → game offers a fantasy storyline and opportunities for socialization,  self-expression through fashion, and three different player-vs-player (pvp) modes</li>
+								</ul>
+							</div> <!-- problems row -->
+
+							<div class="row"> <!-- motives -->
+								<h4>Motives</h4>
+								<p><b>What drives a user to actually <i>use</i> something?</b> Here are my thoughts on why a user would be drawn to Vindictus or its homepage.</p>
+								<ul>
+									<li class="tight">user is seeking stress relief / escapism</li>
+									<li class="tight">user wants a competitive outlet</li>
+									<li class="tight">user wants an activity that provides feelings of success or progress</li>
+									<li class="tight">user is interested in Vindictus’ storyline, combat, etc</li>
+									<li class="tight">user wants social activity to do with friends</li>
+									<li class="tight">user wants to make other friends in gaming community</li>
+									<li class="tight">user wants to try something new</li>
+									<li class="tight">user wants to check out free events, content updates, sales, etc</li>
+								</ul>
+							</div> <!-- motives row -->
+
+							<div class="row"> <!-- alternatives -->
+								<h4>Alternatives</h4>
+								<p>It goes without saying that there are hundreds, if not thousands, of other MMOs out there, and that it would an impossible task to compare them all. I’ve instead <b>examined the homepages of some of the most popular MMOs, and taken note of what they do well and where they fall short.</b></p>
+								<ul>
+									<li><b>Black Desert Online</b> → actually has almost identical layout to Vindictus, but no sense of visual cohesion across carousel elements and with a pale background; focuses strongly on news; not very visually appealing or informative</li>
+									<li><b>Blade &amp; Soul</b> → dark and text-heavy, with a more blog-like layout that relies on social media content; has sidebar feature with recent forum posts; feels outdated, and doesn’t showcase game itself well but appears to have strong community</li>
+									<li><b>Elder Scrolls Online</b> → very visual with tiled layout, but feels a little crowded due to lack of calm background; features game content, news, and sales but not community</li>
+									<li><b>Eve</b> → clean, modern website that feels sleek and visually engaging; perfectly captures feeling of sci-fi game, good balance between information for new players, content updates, and community showcase – I’d say this is one of the best websites of the bunch, with engaging, diverse, and comprehensive content</li>
+									<li><b>Final Fantasy XIV</b> → bright and visually engaging with stationary media; emphasis on customization and versatility; clearly pitched towards new players with lots of explanatory text about the game and its contents; no mention of events, sales, or community</li>
+									<li><b>Guild Wars 2</b> → striking logo and clean feeling, but very sparse content; main content is a visually unimpressive list of news updates; features on sidebar actually perceived as ads at first; no cohesion between visually strong logo / carousel images and rest of website</li>
+									<li><b>Tera</b> → video header and tiled content; feels bright but looks outdated; features mix of events, sales, and updates but doesn’t always distinguish between them clearly; community is missing; difficult to read through navigation footer since it lacks hierarchical clarity</li>
+									<li><b>World of Warcraft</b> → extremely visual with lots of different types media to engage the user; strong focus on content and updates but unclear about events; little to no focus on community or sales; layout and typography create a slightly outdated feeling</li>
+								</ul>
+								<p><b>Vindictus’ homepage was guilty of many of these issues and shortcomings</b>, too, which is what helped to drive my redesign in the direction I have previously described. I wanted to reinvigorate the website with bold, visually engaging content and active promotion of contests, events, sales, and community events in particular.</p>
+							</div> <!-- alternatives row -->
+
+							<div class="row"> <!-- persona -->
+								<h4>Persona</h4>
+								<p>To help keep my mind on the user, I wanted to create a simple user persona to represent the type of person who would play Vindictus and visit its homepage. Meet Peter.</p>
+							
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 extended"> <!-- profile -->
+									<a class="expand" href="assets/images/vindictus/profile.jpg" data-toggle="lightbox" data-gallery="vindictus" data-title="User persona."><img class="img-fluid" src="assets/images/vindictus/profile.jpg" alt="peter"></a>
+								</div> <!-- profile column -->
+							</div> <!-- persona row -->
+
+							<div class="row"> <!-- information architecture -->
+								<h3>Information Architecture</h3>
+								<p><b>Most of my ideas are born as messy pencil scribbles on a post-it note.</b> I roughly sketch the general layout of the design and make notes on different features or functions I’d like to include. Once I’ve got a clearer idea of what needs to happen, <b>I go back and create a wireframe</b>, placing things more definitively. I tend to prefer doing this with pen and paper too—it just feels more intuitive, and you can’t beat having an eraser.</p>
+								<p>These sketches and wireframes inevitably get tweaked as I transition to creating a <b>high-fidelity prototype in Photoshop</b>. I find it a lot easier (and more fun!) to envision a final product once there’s a bit of color on the drawing board.</p>
+							
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 expanded"> <!-- sketch -->
+									<a class="expand" href="assets/images/vindictus/sketch.jpg" data-toggle="lightbox" data-gallery="vindictus" data-title="Initial sketch."><img class="img-fluid" src="assets/images/vindictus/sketch.jpg" alt="sketch"></a>
+								</div> <!-- sketch column -->
+							</div> <!-- information architecture row -->
+
+							<div class="row"> <!-- result -->
+								<div class="spacer"></div>
+								<h2>Result</h2>
+								<p><b>Welcome to Vindictus’ new homepage.</b> It’s important to note that this is a personal project created for my own practice and edification. I am not affiliated in any way with Vindictus or its parent company, Nexon, so this design has not been implemented, nor have I created a functional prototype.</p>
+								<p>If I lived in a fantasy world where I had unlimited time and money, I’d love to get in touch with the company, create a functional prototype of this homepage, conduct user testing, create further iterations, and work on getting this live.</p>
+							</div> <!-- result row -->
+
+							<div class="row"> <!-- more images -->
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 extended"> <!-- images -->
+									<a class="expand" href="assets/images/vindictus/logo.jpg" data-toggle="lightbox" data-gallery="vindictus" data-title="Logo."><img class="img-fluid app-image" src="assets/images/vindictus/logo.jpg" alt="logo"></a>
+								</div> <!-- images column -->
+							</div> <!-- more images row -->
+
+						</div> <!-- text column -->
+					</div> <!-- content row -->
+				</div> <!-- app column -->
+
+			</div> <!-- main content row -->
+		</div> <!-- container-fluid for all content -->
+
+		<!-- JAVASCRIPT AND JQUERY -->
+		<script src="https://code.jquery.com/jquery.js"></script> <!-- jQuery -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script> <!-- Ekko Lightbox JavaScript -->
+		<script src="assets/javascript/app.js"></script>
+	</body>
+</html>
