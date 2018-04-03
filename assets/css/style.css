@@ -36,6 +36,10 @@ div.spacer2 {
 	height: 15px;
 }
 
+div.spacer3 {
+	height: 5px;
+}
+
 div.extended {
 	margin: 0px !important;
 	margin-bottom: 15px !important;
