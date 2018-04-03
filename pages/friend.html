@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 	<head>
-		<title>Liri</title>
+		<title>Friend Finder</title>
 		<link rel="shortcut icon" type="image/jpg" href="../assets/images/misc/favicon.jpg"/>
 
 		<meta charset="utf-8">
@@ -54,51 +54,49 @@
 				<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 main"> <!-- app -->
 					<div class="row"> <!-- content -->
 						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"> <!-- images -->
-							<img class="img-fluid" src="../assets/images/github/liri.jpg" alt="liri">
+							<img class="img-fluid" src="../assets/images/github/friend.jpg" alt="friend">
 							<div class="spacer"></div>
+							<img class="img-fluid grid-border" src="../assets/images/github/friend3.jpg" alt="survey">
 						</div> <!-- images column -->
 						
 						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 textblock"> <!-- text -->
 							<div class="row"> <!-- title -->
-								<h1>Liri</h1>
+								<h1>Friend Finder</h1>
 							</div> <!-- title row -->
 
 							<div class="row"> <!-- tags -->
 								<label class="filter" id="application">Application</label>
+								<label class="filter" id="mobile">Mobile</label>
+								<label class="filter" id="website">Website</label>
+								<label class="filter" id="html">HTML</label>
+								<label class="filter" id="css">CSS / Bootstrap</label>
 								<label class="filter" id="javascript">JavaScript / jQuery</label>	
 								<label class="filter" id="ajax">AJAX / APIs</label>
 								<label class="filter" id="nodejs">Node.js</label>
+								<label class="filter" id="expressjs">Express.js</label>
+								<label class="filter" id="heroku">Heroku</label>
+								
 							</div> <!-- tags row -->
 
 							<div class="row"> <!-- description -->
 								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 extended2">
 									<div class="spacer"></div>
-									<p>A Node.js application which accepts user input and completes requests accordingly.</p>
+									<p>A fully-responsive friend finder application created with Express.js.</p>
+									<p>Complete the survey by filling out your name, linking a photo of yourself, and answering the brief questionnaire. The survey will match you with your new best friend - the most compatible user currently registered in our database. Have fun!</p>
 								</div> <!-- description column -->
 							</div> <!-- description row -->
 
 							<div class="row"> <!-- instructions -->
 								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 extended2">
 									<h2>Instructions</h2>
-									<p><b>You will need to link your own Twitter and Spotify accounts</b> for the app to function, as I have not made mine public. This can be done by replacing the keys and secrets in the "keys.js" file.</p>
-									<p><b>You will also need to have the following Node.js packages installed prior to running this application:</b></p>
+									<p><b>You can play with Friend Finder on <a class="blue" href="https://boiling-plains-55895.herokuapp.com/">Heroku</a>.</b></p>
+									<p><b>You will need to have the following Node.js packages installed prior to running this application locally:</b></p>
 									<ul>
-										<li class="tight">dotenv</li>
-										<li class="tight">inquirer</li>
-										<li class="tight">node-spotify-api</li>
-										<li class="tight">request</li>
-										<li class="tight">twitter</li>
+										<li class="tight">body-parser</li>
+										<li class="tight">express</li>
+										<li class="tight">path</li>
 									</ul>
-									<p><b>To use Liri, navigate to its directory and enter "node liri.js <i>(command) (specify)</i>" in the command line.</b> <i>(Command)</i> and <i>(specify)</i> are placeholders for user inputs. See below for a list of possible commands. Specify refers to a specific search query, such as a movie or song title, which is entered as a string enclosed in quotes.</p>
-									<div class="spacer3"></div>
-
-									<h3>Commands</h3>
-									<ul>
-										<li><b>my-tweets</b> - Displays the user's last 10 tweets and their date of creation. (<b>e.g.:</b> "node liri.js my-tweets")</li>
-										<li><b>spotify-this-song</b> - Displays the top 10 search results for the user's entered search term. Returns each track's title, artist(s), and album, as well as a preview link. Defaults to "The Sign" by Ace of Base if no search term is entered. (<b>e.g.:</b> "node liri.js spotify-this-song 'unchained melody'")</li>
-										<li><b>movie-this</b> - Displays the top search result for the user's entered search term. Returns information about the movie's title, release year, IMDB rating, Rotten Tomatoes rating, country, language, plot, and actors. Defaults to "Mr. Nobody" is no search term is entered. (<b>e.g.:</b> "node liri.js movie-this 'the return of the king'")</li>
-										<li><b>do-what-it-says</b> - Performs command written in the random.txt file. (<b>e.g.:</b> "node liri.js do-what-it-says")</li>
-									</ul>
+									<p><b>To run Friend Finder locally,</b> navigate to its directory and enter "node server.js" in the command line.</p>
 								</div> <!-- instructions column -->
 							</div> <!-- instructions row -->
 
@@ -107,18 +105,25 @@
 									<h2>Technologies Used</h2>
 									<p><b>The following technologies were used to create this application:</b></p>
 									<ul>
+										<li class="tight">HTML</li>
+										<li class="tight">CSS</li>
+										<li class="tight">Bootstrap</li>
 										<li class="tight">JavaScript</li>
+										<li class="tight">jQuery</li>
 										<li class="tight">Node.js</li>
 										<li class="tight">Node.js packages (see above)</li>
 										<li class="tight">AJAX</li>
 										<li class="tight">APIs</li>
+										<li class="tight">Express.js</li>
+										<li class="tight">Heroku</li>
 									</ul>
 								<div class="spacer"></div>
 								</div> <!-- technologies column -->
 							</div> <!-- technologies row -->
 
 							<div class="row"> <!-- buttons -->
-								<button class="view"><a href="https://github.com/karamui/Liri" target="_blank">View on GitHub</a></button>
+								<button class="view"><a href="https://boiling-plains-55895.herokuapp.com/" target="_blank">Go to Website</a></button>
+								<button class="view"><a href="https://github.com/karamui/FriendFinder" target="_blank">View on GitHub</a></button>
 							</div> <!-- buttons row -->
 
 						</div> <!-- text column -->

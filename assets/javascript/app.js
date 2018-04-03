@@ -18,9 +18,9 @@ $("#returntotop").on("click", function() {
 // return to top hover functionality
 $(".nav").on({
 	"mouseenter": function() {
-		$(this).attr("src", "assets/images/misc/up-arrow-blue.png");
+		$(this).attr("src", "../assets/images/misc/up-arrow-blue.png");
 	},
 	"mouseleave": function() {
-		$(this).attr("src", "assets/images/misc/up-arrow.png");
+		$(this).attr("src", "../assets/images/misc/up-arrow.png");
 	}
 });
