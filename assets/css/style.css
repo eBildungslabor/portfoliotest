@@ -150,6 +150,11 @@ ul {
 	list-style-type: circle;
 }
 
+ol {
+	margin-left: 20px;
+	list-style-type: decimal;
+}
+
 li {
 	margin-bottom: 10px;
 }
