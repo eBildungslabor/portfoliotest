@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 	<head>
-		<title>Friend Finder</title>
+		<title>WIP: StudyBuddy</title>
 		<link rel="shortcut icon" type="image/jpg" href="../assets/images/misc/favicon.jpg"/>
 
 		<meta charset="utf-8">
@@ -54,14 +54,21 @@
 				<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 main"> <!-- app -->
 					<div class="row"> <!-- content -->
 						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"> <!-- images -->
-							<img class="img-fluid" src="../assets/images/github/friend.jpg" alt="friend">
+							<a class="expand" href="../assets/images/github/studybuddy.jpg" data-toggle="lightbox" data-gallery="studybuddy" data-title="Current login page."><img class="img-fluid" src="../assets/images/github/studybuddy.jpg" alt="login"></a>
 							<div class="spacer"></div>
-							<img class="img-fluid grid-border" src="../assets/images/github/friend3.jpg" alt="survey">
+							<a class="expand" href="../assets/images/github/studybuddy2.jpg" data-toggle="lightbox" data-gallery="studybuddy" data-title="Initial concept for the landing page (when not logged in)."><img class="img-fluid grid-border" src="../assets/images/github/studybuddy2.jpg" alt="landing"></a>
+							<div class="spacer"></div>
+							<a class="expand" href="../assets/images/github/studybuddy3.jpg" data-toggle="lightbox" data-gallery="studybuddy" data-title="Initial concept for the dashboard page with placeholders for user statistics."><img class="img-fluid grid-border" src="../assets/images/github/studybuddy3.jpg" alt="dashboard"></a>
+							<div class="spacer"></div>
+							<a class="expand" href="../assets/images/github/studybuddy4.jpg" data-toggle="lightbox" data-gallery="studybuddy" data-title="Initial concept for the landing page of a flashcard set."><img class="img-fluid grid-border" src="../assets/images/github/studybuddy4.jpg" alt="set"></a>
+							<div class="spacer"></div>
+							<a class="expand" href="../assets/images/github/studybuddy5.jpg" data-toggle="lightbox" data-gallery="studybuddy" data-title="Initial concept for a flashcard page."><img class="img-fluid grid-border" src="../assets/images/github/studybuddy5.jpg" alt="question"></a>
+							<div class="spacer"></div>
 						</div> <!-- images column -->
 						
 						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 textblock"> <!-- text -->
 							<div class="row"> <!-- title -->
-								<h1>Friend Finder</h1>
+								<h1>WIP: StudyBuddy</h1>
 							</div> <!-- title row -->
 
 							<div class="row"> <!-- tags -->
@@ -74,28 +81,56 @@
 								<label class="filter" id="ajax">AJAX / APIs</label>
 								<label class="filter" id="nodejs">Node.js</label>
 								<label class="filter" id="expressjs">Express.js</label>
-								<label class="filter" id="heroku">Heroku</label>
+								<label class="filter" id="reactjs">React.js</label>
+								<label class="filter" id="mysql">MySQL</label>
+								<label class="filter" id="heroku">Heroku</label>		
 							</div> <!-- tags row -->
 
 							<div class="row"> <!-- description -->
 								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 extended2">
 									<div class="spacer"></div>
-									<p>A fully-responsive friend finder application created with Express.js.</p>
-									<p>Complete the survey by filling out your name, linking a photo of yourself, and answering the brief questionnaire. The survey will match you with your new best friend - the most compatible user currently registered in our database. Have fun!</p>
+									<p>A fully-responsive application designed to help users study through the use of flashcards.</p> 
+									<p><b>This application is a work-in-progress</b> begun by Abdi Abdikarin, Maggie Alberts, Chetan Audipudy, Chris Banaszak, and Kara Mui.</p>
+									<p>The final design is intended to allow users to study with sets of flashcards (premade or their own creation), complete practice tests, track their progress during review sessions, and challenge themselves with extended learning opportunities.</p>
 								</div> <!-- description column -->
 							</div> <!-- description row -->
 
 							<div class="row"> <!-- instructions -->
 								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 extended2">
 									<h2>Instructions</h2>
-									<p><b>You can play with Friend Finder on <a class="blue" href="https://boiling-plains-55895.herokuapp.com/">Heroku</a>.</b></p>
+									<p><b>You can play with StudyBuddy on <a class="blue" href="https://studdy-buddy-nw.herokuapp.com/">Heroku</a>.</b></p>
 									<p><b>You will need to have the following Node.js packages installed prior to running this application locally:</b></p>
 									<ul>
+										<li class="tight">babel-cli</li>
+										<li class="tight">babel-core</li>
+										<li class="tight">babel-loader</li>
+										<li class="tight">babel-plugin-transform-class-properties</li>
+										<li class="tight">babel-preset-env</li>
+										<li class="tight">babel-preset-react</li>
+										<li class="tight">bcrypt</li>
 										<li class="tight">body-parser</li>
+										<li class="tight">classnames</li>
+										<li class="tight">css-loader</li>
 										<li class="tight">express</li>
+										<li class="tight">fs</li>
+										<li class="tight">live-server</li>
+										<li class="tight">mysql2</li>
+										<li class="tight">node</li>
+										<li class="tight">nodemon</li>
 										<li class="tight">path</li>
+										<li class="tight">react</li>
+										<li class="tight">react-dom</li>
+										<li class="tight">react-modal</li>
+										<li class="tight">react-router-dom</li>
+										<li class="tight">reload</li>
+										<li class="tight">sequelize</li>
+										<li class="tight">style-loader</li>
+										<li class="tight">validator</li>
+										<li class="tight">webpack</li>
+										<li class="tight">webpack-dev-server</li>
 									</ul>
-									<p><b>To run Friend Finder locally,</b> navigate to its directory and enter "node server.js" in the command line.</p>
+									<p>To install all packages quickly, run navigate to StudyBuddy's directory and run "npm install" in the command line.</p>
+									<p>For the <b>production build</b>, run "npm run build:prod" and "npm run start." For the <b>development build</b>, run "npm run dev."</p>
 								</div> <!-- instructions column -->
 							</div> <!-- instructions row -->
 
@@ -114,15 +149,22 @@
 										<li class="tight">AJAX</li>
 										<li class="tight">APIs</li>
 										<li class="tight">Express.js</li>
+										<li class="tight">React.js</li>
+										<li class="tight">MySQL</li>
+										<li class="tight">Sequelize</li>
+										<li class="tight">Bcrypt</li>
+										<li class="tight">Babel</li>
+										<li class="tight">Webpack</li>
 										<li class="tight">Heroku</li>
+										<li class="tight">JawsDB</li>
 									</ul>
 								<div class="spacer"></div>
 								</div> <!-- technologies column -->
 							</div> <!-- technologies row -->
 
 							<div class="row"> <!-- buttons -->
-								<button class="view"><a href="https://boiling-plains-55895.herokuapp.com/" target="_blank">Go to Website</a></button>
-								<button class="view"><a href="https://github.com/karamui/FriendFinder" target="_blank">View on GitHub</a></button>
+								<button class="view"><a href="https://studdy-buddy-nw.herokuapp.com/" target="_blank">Go to Website</a></button>
+								<button class="view"><a href="https://github.com/karamui/StudyBuddy" target="_blank">View on GitHub</a></button>
 							</div> <!-- buttons row -->
 
 						</div> <!-- text column -->
